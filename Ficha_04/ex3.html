@@ -19,12 +19,42 @@
             },
             {
                 name:"Carla",
-                grade14
+                grade:14
             }
         ]
 
+        createObj()
+        calcAVG()
+        
+
         //b------------
-    
+        function createObj(){
+            const name = prompt("Indique um nome:")
+            const grade = +prompt("Indique uma nota:")
+
+            const newObj = {
+                name: name,
+                grade: grade
+            }
+            //alternativa de criar um novo objeto
+            //const newObj = {name, grade}
+
+            //alternativa de adicionar um novo objeto ao array grades
+            //grades[grades.length] = newObj
+
+            grades.push(newObj)
+        }
+        console.table(grades)
+
+        //c-------------
+        function calcAVG(){
+            let sum = 0
+            for(const prop of grades ){
+                sum += prop.grade
+            }
+            console.log(sum/grades.length)
+        }
+        
     
     </script>
     
