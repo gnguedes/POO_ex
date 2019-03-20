@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex2</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name:"David Silva",
+            course:"POO",
+            grade:12
+        }
+    
+        getProp()
+        calcLength()
+        removeGrade()
+        getProp()
+        calcLength()
+    
+        //b---------
+        function getProp(){
+            for( let prop in student){
+                console.log(prop)      
+            }
+        }
+        
+        //c---------
+        function removeGrade(){
+            delete student.grade
+        }
+
+        //d---------
+        
+        function calcLength(){
+            let cont = 0
+            for( let prop in student){
+                  cont++
+            }
+            console.log(cont)
+        }
+
+    </script>
+    
+</body>
+</html>
