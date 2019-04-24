@@ -11,12 +11,12 @@ btnFilter.addEventListener("click", function(event){
     event.preventDefault()
 })
 //butao remover
-const btnRemove = document.querySelector("#btnRemove")
+/*const btnRemove = document.querySelector("#btnRemove")
 btnRemove.addEventListener("click",function (event) {
     
     
 })
-
+*/
 
 
 // teste -- myCatalog.innerHTML="dsc"
